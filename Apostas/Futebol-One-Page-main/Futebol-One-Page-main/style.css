@@ -1,0 +1,167 @@
+* {
+	font-family: "raleway", sans-serif;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+abbr {
+	cursor: pointer !important;
+}
+.fa-chevron-circle-down {
+	font-size: 18pt;
+	position: fixed;
+	left: 99%;
+	top: 99%;
+	transform: translate(-100%, -100%);
+	z-index: 99;
+	color: gray;
+} 
+nav {
+	width: 100% !important;
+	background-color: rgba(255, 255, 255, 0);
+	transition: all 0.5s;
+	position: fixed !important;
+	z-index: 99;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+/* Nav bar responsiva */
+@media screen and (max-width: 990px) {
+	.icones {
+		flex-direction: row !important;
+	}	
+	nav > .container-fluid {
+		padding-top: 0.5rem !important;
+		padding-bottom: 0.5rem !important;
+	}
+}
+body {
+	background-color: rgba(243, 246, 250, 0.9) !important;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+section {
+	background-color: rgba(243, 246, 250, 0.5);
+	overflow-x: hidden;
+}
+.nav-icon {
+	color: white;
+	margin-right: .9rem;
+	width: auto;
+	text-align: center;
+}
+.icones {
+	margin-left: 20px !important;
+	--bs-gutter-x: 0rem !important;
+}
+.nav-icon:hover > i {
+	transition: all 0.2s;
+	transform: scale(1.4);
+}
+.nav-icon:hover > .fa-whatsapp {
+	color: green;
+}
+.nav-icon:hover >  .fa-instagram {
+	color: orange;
+}
+.nav-icon:hover > .fa-facebook-f {
+	color: blue;
+}
+.alternativas {
+	transition: all 2s;
+	font-size: 0.85rem;
+	color: white;
+}
+.nav-item {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	box-sizing: border-box;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	border-top: solid 2px transparent;
+	transition: all 0.5s;
+}
+.nav-item:hover {
+	border-color: #ff9900 !important;
+}
+.nav-link {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	cursor: pointer;
+}
+
+.apresentation-image {
+	background-image: url("./imagens/capa.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+.apresentation {
+	background-color: rgba(0,0,0,0.7);
+	height: 100vh;
+	width: 100vw;
+	color: white;
+	z-index: 98;
+}
+
+.title_ {
+	font-family: "raleway", sans-serif;
+	width: 60%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	animation-duration: 1.5s;
+	text-align: center;
+}
+.slogan {
+	font-family: "raleway", sans-serif;
+	animation-duration: 2.5s;
+	border-left: solid 2px #ffc107;
+	padding-left: 6px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+}
+
+.buttons {
+	font-family: "raleway", sans-serif;
+	position: relative;
+	bottom: -10vh !important;
+	animation-duration: 1.5s;
+	text-align: center;
+}
+.informations {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+
+.btn-info-one, .btn-info-two {
+	width: 8rem;
+	padding: .5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border: none;
+	box-sizing: border-box;
+	transition: all 0.7s ease;
+	position: relative;
+	cursor: pointer;
+	border: solid 1px transparent;
+	color: white;
+}
+.btn-info-one {
+	margin-right: 10px;
+	background-color: #18407b;
+}
+
+.btn-info-two {
+	background-color: #FF9000;
+	margin-left: 10px;
+}
+
