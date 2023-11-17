@@ -58,6 +58,7 @@ $imagem = "../assets/img/artigos/" . $imagem;
                     
                     <div class="novo__form__section">
                         <a href="../index.php" class="btn">Voltar</a>
+                        <a href="../apostas/index.php?id=<?= $id ?>" class="btn">Apostar</a>
                     </div>
                 </form>
 

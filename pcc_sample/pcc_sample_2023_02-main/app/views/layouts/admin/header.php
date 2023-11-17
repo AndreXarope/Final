@@ -19,7 +19,7 @@
 <header class="main_header">
     <div class="main_header_content">
         <a href="../usuario_admin.php" class="logo">
-            <img src="../assets/img/logo.png" alt="Bem vindo ao projeto prático Html5 e Css3 Essentials" title="Bem vindo ao projeto prático Html5 e Css3 Essentials"></a>
+            <img src="../assets/img/bet.png" alt="Bem vindo ao projeto prático Html5 e Css3 Essentials" title="Bem vindo ao projeto prático Html5 e Css3 Essentials"></a>
 
         <nav class="main_header_content_menu">
             <ul>

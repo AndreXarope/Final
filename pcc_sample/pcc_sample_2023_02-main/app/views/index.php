@@ -9,6 +9,8 @@ require_once __DIR__ . '/auth/login.php';
 require_once __DIR__ . "/../src/dao/artigodao.php";
 require_once __DIR__ . "/../src/dao/categoriadao.php";
 
+// require_once __DIR__ . '/apostas/index.php';
+
 const UPLOAD_DIR = "assets/img/artigos/";
 
 
@@ -45,31 +47,11 @@ if ($categoriaId == "0" && $filtroTitulo == "") {
     <!--INICIO SESSÃO SESSÃO DE ARTIGOS-->
     <section class="main_blog">
         <header class="main_blog_header">
-            <h1 class="icon-blog">Nosso Últimos Artigos</h1>
-            <p>Aqui você encontra os artigos necessários para auxiliar na sua caminhada web.</p>
+            <h1 class="icon-blog">Proximos Jogos</h1>
+            <p>Aqui você os melhores jogos para apostar.</p>
             <div style="display: flex; justify-content: space-between;">
-                <select name="categorias" onchange="filtroPorCategoria(this.value);" style="margin-top: 10px;width:50%;">
-                    <option value="0">Todas as categorias</option>
-                    <?php
-                    foreach ($categorias as $categoria) {
-                        echo "<option value='"
-                            . $categoria['id'] . "'"
-                            . ($categoriaId == $categoria['id'] ? ' selected' : '') . ">"
-                            . $categoria['nome']
-                            . "</option>";
-                    }
-                    ?>
-                </select>
-                <form style="width: 49%; display: flex;margin-top: 10px;gap: 5px;;">
-                    <input 
-                        type="text" 
-                        name="filtro" 
-                        placeholder="Informe o nome do artigo a ser buscado." 
-                        value="<?= isset($_GET['filtro'])?$_GET['filtro']:'';?>" 
-                        autofocus
-                        style="width: 95%;">
-                    <button type="submit" class="btn novo__form__btn__cadastrar">Buscar</button>
-                </form>
+                
+                
                 </div>
         </header>
 
@@ -88,6 +70,7 @@ if ($categoriaId == "0" && $filtroTitulo == "") {
                         <?= (strlen($row['texto']) > 100) ? substr($row['texto'], 0, 100) . "(...)" : substr($row['texto'], 0, strlen($row['texto'])) ?>
                     </p>
                 </h2>
+                
             </article>
         <?php endforeach ?>
 
