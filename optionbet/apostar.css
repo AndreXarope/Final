@@ -1,0 +1,38 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    gap: 3rem;  
+}
+
+article{
+    margin-top: 1rem;
+}
+
+.form{
+    background-color: #dddddd;
+    padding: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.field input{
+    border: solid 1px #dddddd;
+    padding: .5rem .8rem;
+    border-radius: .5rem;
+    width: 200px;
+}
+
+.field input[type='radio']{
+    width: 1rem;
+}
